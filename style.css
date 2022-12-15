@@ -188,8 +188,7 @@ section .roxo {
 .tittle-products{
     max-width: 1200px;
     text-align: start;
-    width: 200px;
-    margin: 90px 12vw 0;
+     margin: 90px auto 0;
 }
 .products-container{
     display: flex;
