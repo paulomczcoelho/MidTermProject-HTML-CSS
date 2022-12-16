@@ -293,7 +293,10 @@ section .roxo {
         /* margin: 0; */
     }
     .buy{
-        display: none;
+        display: inline-block;
+        position: relative;
+        top: 50px;
+        right: -38px;
     }
     .input-search{
        display: none;
@@ -312,7 +315,7 @@ section .roxo {
     .input-link{
         position: relative;
         top: -16px;
-        margin-left: 28%;
+        margin-left: 18%;
     }
     .nav-list a{
         display: none;
@@ -364,6 +367,9 @@ section .roxo {
         flex-direction: column;
         margin: 25px;
         padding: 10px;
+    }
+    .tittle-products{
+        margin: 90px auto -30px;
     }
     .footer-infor{
         bottom:-13px;
