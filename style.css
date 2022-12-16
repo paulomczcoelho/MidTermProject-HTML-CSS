@@ -17,7 +17,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 960px;
+    /* max-width: 960px; */
+    max-width: 1046px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -32,12 +33,13 @@ nav .nav-list{
     display: flex;
     flex-wrap: wrap;
     background-color: #17B1E7;
+    max-width: 540px;
     
 }
 .nav-list li a{
     color: aliceblue;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px 30px 15px 30px;
 }
 .nav-list li a:hover{
@@ -81,7 +83,19 @@ img.img-banner{
     width: 60%;
 }
 .buy{
-    max-width: 50px;
+    max-width: 30px;
+    margin: 0px 1px 0px 0px;
+}
+.login{
+    color: white;
+    margin: 18px;
+}
+.login:hover{
+    background-color: #F1F2F1;
+    padding: 15px;
+    color: #020731;
+    cursor: pointer;
+    margin: 7px 3px;
 }
 section{
     margin-bottom: 20px;
@@ -89,7 +103,7 @@ section{
 section .promo-card{
     max-height: 389px;
     background-color: rgba(153, 159, 161, 0.2);
-    box-shadow: 4px 4px 11px 4px black;
+    box-shadow: 1px 1px 7px 1px #403b3b;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -181,9 +195,25 @@ section .roxo {
     max-width: 180px;
 }
 .footer-bg{
-    height: 100px;
+    margin: 35px auto 0px;
+    height: 115px;
     width: 100%;
     background-color: #11619E;
+}
+.footer-infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -31px;
+}
+.footer-infor p{
+    color: white;
+}
+.footer-infor a{
+    font-size: 17px;
+    color: white;
 }
 .tittle-products{
     max-width: 1200px;
@@ -270,7 +300,14 @@ section .roxo {
     }
     .btn-menu{
         display: flex;
-        
+    }
+    .login{
+        position: relative;
+        top: 50px;
+        color: #020731;
+    }
+    .login:hover{
+        padding: 0;
     }
     .input-link{
         position: relative;
