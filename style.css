@@ -365,6 +365,14 @@ section .roxo {
         margin: 25px;
         padding: 10px;
     }
+    .footer-infor{
+        bottom:-13px;
+        justify-content: center;
+    }
+    .footer-infor p{
+        font-size: 16px;
+    }
+
 }
 
 
