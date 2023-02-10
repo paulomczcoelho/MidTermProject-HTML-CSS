@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce</title>
+</head>
+<body>
+<header>
+    <div class="top-layout"></div>
+    <div class="menu-bg">
+        <div class="menu">
+            <img class="menu-logo-img" src="img/back-top-layout2.jpg" alt="Logo-Greatshop">
+            <input class="input-search" type="search" alt="Search you product" placeholder="Search you product">
+            <nav class="navv">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Woman</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Outlet</a></li>
+                </ul>
+            </nav>
+            <div class="buy"><img src="img/shop-car.png" alt="buy" class="car-buy">
+                <ul class="item">
+                    
+                </ul></div>
+            
+            <div class="login">Login</div>
+        </div>
+    </div>
+    <div class="btn-menu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <section class="normal-section">
+       
+
+        <table class="cart-table" id="cartTable">
+          <thead>
+            <tr>
+              <th class="table-head-item first-col">Item</th>
+              <th class="table-head-item second-col">Preço</th>
+              <th class="table-head-item third-col">Quantidade</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- <tr class="cart-product">
+              <td class="product-identification">
+                <img src="img/shoes-slide.fw.png" alt="Miniatura" class="cart-product-image">
+                <strong class="cart-product-title">Shoes</strong>
+              </td>
+              <td>
+                <span class="cart-product-price">R$69,90</span>
+              </td>
+              <td>
+                <input type="number" value="2" min="0" class="product-qtd-input">
+                <button type="button" class="remove-product-button">-</button>
+              </td>
+            </tr>
+            <tr class="cart-product">
+              <td class="product-identification">
+                <img src="img/shoesNike-slide.fw.png" alt="Poster 3" class="cart-product-image">
+                <strong class="cart-product-title">Jacket</strong>
+              </td>
+              <td>
+                <span class="cart-product-price">R$99,99</span>
+              </td>
+              <td>
+                <input type="number" value="1" min="0" class="product-qtd-input">
+                <button type="button" class="remove-product-button">-</button>
+              </td>
+            </tr> -->
+          </tbody>
+
+          <tfoot>
+              <tr>
+                  <td colspan="3" class="cart-total-container">
+                      <strong>Total</strong>
+                      <span>R$0,00</span>
+                      <button type="button" class="close">X</button>
+                      <button type="button" class="purchase-button">Finalizar Compra</button>
+              </td>
+            </tr>
+        </tfoot>
+    </table>
+
+      </section>
+    <div id="myLinks">
+        <div class="input-link"><input type="search"></div>
+        <a href="#Home">Home</a>
+        <a href="#Home">Kids</a>
+        <a href="#Home">Woman</a>
+        <a href="#Home">Men</a>
+        <a href="#Home">Outlet</a>
+    </div>   
+</header>
+
+<section>
+    <div class="banner">
+        <div class="promo-card">
+            <p>50% OFF Sales</p>
+            <img src="img/shoes.fw.png" alt="Promo-shoes" width="200px" class="product-image">
+            <h3 class="specs model-shoes">Nike</h3>
+            <ul>
+                <li>Style #: 3024978</li>
+                <li>Weight: 12.6 oz.</li>
+                <li>Lace type: Standard tie</li>
+                <li>Imported</li>
+            </ul>
+            <p class="price">$ 100</p>
+            <button class="btn-advertivement buy-shoes">Buy</button>
+        </div>
+        <!-- <img src="img/banner-outlet.jpg" alt="Outler" class="img-banner"> -->
+        
+        <div class="promo-card">
+            <p>50% OFF Sales</p>
+            <img src="img/jacket.fw.png" alt="Promo-shoes" width="200px" class="product-image">
+            <h3 class="specs model-shoes">Jacket</h3>
+            <ul>
+                <li>Style #: 3024978</li>
+                <li>Weight: 12.6 oz.</li>
+                <li>Lace type: Standard tie</li>
+                <li>Imported</li>
+            </ul>
+            <p class="price">$ 149</p>
+            <button class="btn-advertivement buy-shoes">Buy</button>
+        </div>
+    </div>
+</section>    
+
+<section class="container">
+    <!-- <div class="barra"> -->
+    <div class="card">
+        <div class="card-tittle">
+            <p class="tittle model-shoes" >Watch</p>
+            <div class="card-img">
+                <img src="img/relogio.fw.png" alt="" class="product-image">
+                <p class="price">$ 149</p>
+                <button class="buy-shoes">Buy Now >></button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Bag</p>
+            <div class="card-img">
+                <img src="img/bagback.fw.png"  class="product-image" alt="">
+                <p class="price">$ 39</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Shoes</p>
+            <div class="card-img">
+                <img src="img/shoes-slide.fw.png" class="product-image" alt="">
+                <p class="price">$ 39</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Puff</p>
+            <div class="card-img">
+                <img src="img/puff-slide.fw.png" class="product-image" alt="">
+                <p class="price">$ 339</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Hat</p>
+            <div class="card-img">
+                <img src="img/hat.fw.png" class="product-image" alt="">
+                <p class="price">$ 25</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Sweatshirt</p>
+            <div class="card-img">
+                <img src="img/sweatshirt.fw.png" class="product-image" alt="">
+                <p class="price">$ 59</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Snowboard</p>
+            <div class="card-img">
+                <img src="img/snowboard.fw.png" class="product-image" alt="">
+                <p class="price">$ 299</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Sunglas</p>
+            <div class="card-img">
+                <img src="img/sunglas-slide.fw.png" class="product-image" alt="">
+                <p class="price">$ 99</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Boots</p>
+            <div class="card-img">
+                <img src="img/boots-slide.fw.png" class="product-image" alt="">
+                <p class="price">$ 139</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+        <div class="card-tittle"><p class="tittle model-shoes">Bikes</p>
+            <div class="card-img">
+                <img src="img/bike-slide.fw.png" class="product-image" alt="">
+                <p class="price">$ 399</p>
+                <button class="buy-shoes">Buy Now >></button>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- </div> -->
+</section>
+
+<p class="tittle-products productInfos">Shoes</p>
+<section class="products-container">
+    <div class="shoes">
+        <img src="img/shoes-slide.fw.png" class="product-image" alt="Under Armour Flow FUTR X 2 Basketball">
+        <div class="model-shoes">Under Armou</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem
+            <div class="price">$ 100</div> 
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+    <div class="shoes">
+        <img src="img/shoesNewBalance-slide.fw.png" class="product-image" alt="New Balance Fresh Foam Roav Tee Shirt ">
+        <div class="model-shoes">New Balance</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem
+            <div class="price">$ 89</div> 
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+    <div class="shoes">
+        <img src="img/shoesNike-slide.fw.png" class="product-image" alt="Nike Pegasus">
+        <div class="model-shoes">Nike Pegasus Trail 3</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem
+            <div class="price"> $ 67</div> 
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+</section>
+<p class="tittle-products">Sports</p>
+<section class="products-container">
+    <div class="shoes">
+        <img src="img/glove-box-slide.fw.png" class="product-image" alt="Everlast Pro Style Elite Training">
+        <div class="model-shoes">Everlast Pro Style Elite Training</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem 
+            <div class="price">$ 100</div> 
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+    <div class="shoes">
+        <img src="img/bike-slide.fw.png" class="product-image" alt="Spri Home Gym Kit">
+        <div class="model-shoes">Spri Home Gym Kit</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem 
+            <div class="price">$ 359</div>
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+    <div class="shoes">
+        <img src="img/snowboardsumglas-slide.fw.png" class="product-image" alt="Decibel Freeride Junior Kids">
+        <div class="model-shoes">Decibel Freeride</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem 
+            <div class="price">$ 100</div>
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+</section>
+<p class="tittle-products">Gym</p>
+<section class="products-container">
+    <div class="shoes">
+        <img src="img/gymequipaments-slide.fw.png" class="product-image"alt="">
+        <div class="model-shoes">Flow FUTR</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem 
+            <div class="price">$ 100</div>
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+    <div class="shoes">
+        <img src="img/dumbell-slide.fw.png" class="product-image" alt="Dumbell">
+        <div class="model-shoes">Dumbbell</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem 
+            <div class="price">$ 49</div>
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+    <div class="shoes">
+        <img src="img/bike.fw.png" class="product-image" alt="">
+        <div class="model-shoes">Bowflex C6 Bike</div>
+        <p class="spec-shoes">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nisi repellat earum aperiam porro quidem
+            <div class="price">$ 199</div> 
+        </p>
+        <div class="bg-button"><button class="buy-shoes">Buy Now >></button></div>
+    </div>
+</section>
+
+
+
+<footer class="footer-bg">
+    <div class="footer-infor">
+        <p>Mid Term Project: HTML+CSS</p>
+        <a href="paulofcoelho20@gmail.com">paulofcoelho20@gmail.com</a>
+        <p>cornerstone International Community College</p>
+     </div>
+</footer>
+
+<script src="ecommerce.js"></script>
+</body>
+</html>
